@@ -19,7 +19,7 @@ app.use('/users', usersRouter);
 app.get("/authorize", (req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    res.set({'Location':'http://127.0.0.1:8081/index.html'});
+    res.set({'Location':'http://127.0.0.1:8081/test.js?acess=token'});
     res.status(302).send({status:true});
    });
 
