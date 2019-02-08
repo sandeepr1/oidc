@@ -21,7 +21,7 @@ app.get("/authorize", (req, res, next) => {
     // res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     // res.set({'Location':req.headers.redirect_uri+"?accessToken=token"});
     console.log(req.headers.redirect_uri);
-    res.redirect(req.headers.redirect_uri);
+    res.redirect(req.headers.redirect_uri+"?access=token");
    // res.status().send({status:true});
    });
 
